@@ -1,0 +1,194 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(30 / 16 * 1vw) calc(40 / 16 * 1vw);
+  align-items: center;
+  position: relative;
+}
+
+.navbar > a > img {
+  width: calc(133 / 16 * 1vw);
+  height: calc(24 / 16 * 1vw);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: calc(40 / 16 * 1vw);
+}
+
+nav > a {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(16 / 16 * 1vw);
+  color: var(--font-color);
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+.phoneNumber {
+  width: calc(208 / 16 * 1vw);
+  height: calc(44 / 16 * 1vw);
+  display: flex;
+  align-items: center;
+  gap: calc(8 / 16 * 1vw);
+  border: none;
+  justify-content: center;
+  background-color: var(--font-color);
+}
+
+.phoneNumber > img {
+  width: calc(24 / 16 * 1vw);
+  height: calc(24 / 16 * 1vw);
+}
+
+.phoneNumber > p {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(16 / 16 * 1vw);
+  color: white;
+}
+
+.burgerButton {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: calc(23 / 7.68 * 1vw) calc(20 / 7.68 * 1vw);
+  }
+
+  .burgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(30 / 7.68 * 1vw);
+    height: calc(30 / 7.68 * 1vw);
+    background-color: var(--brand-color);
+    border: none;
+  }
+
+  .burgerButton > img {
+    width: calc(18 / 7.68 * 1vw);
+    height: calc(15 / 7.68 * 1vw);
+  }
+
+  .phoneNumber {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar > a > img {
+    width: calc(133 / 7.68 * 1vw);
+    height: calc(24 / 7.68 * 1vw);
+  }
+
+  .menu {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: calc(-880 / 7.68 * 1vw);
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(150 / 7.68 * 1vw);
+    padding-bottom: calc(30 / 7.68 * 1vw);
+    gap: calc(348 / 7.68 * 1vw);
+  }
+
+  .menuNav {
+    display: flex;
+    flex-direction: column;
+    gap: calc(40 / 7.58 * 1vw);
+    align-items: center;
+  }
+
+  .menuNav > a {
+    font-family: var(--font-oswald);
+    font-weight: 700;
+    font-size: calc(36 / 7.68 * 1vw);
+    line-height: calc(36 / 7.68 * 1vw);
+    letter-spacing: -2%;
+    color: var(--font-color);
+  }
+
+  .menu > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: calc(16 / 7.68 * 1vw);
+    align-items: center;
+  }
+
+  .menu > div:last-child > p {
+    font-family: var(--font-oswald);
+    font-weight: 700;
+    font-size: calc(36 / 7.68 * 1vw);
+    line-height: calc(36 / 7.68 * 1vw);
+    letter-spacing: -2%;
+    color: var(--font-color);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .navbar {
+    padding: calc(23 / 3.9 * 1vw) calc(20 / 3.9 * 1vw);
+    align-items: center;
+  }
+
+  .burgerButton {
+    width: calc(30 / 3.9 * 1vw);
+    height: calc(30 / 3.9 * 1vw);
+  }
+
+  .burgerButton > img {
+    width: calc(18 / 3.9 * 1vw);
+    height: calc(15 / 3.9 * 1vw);
+  }
+
+  .navbar > a > img {
+    width: calc(133 / 3.9 * 1vw);
+    height: calc(24 / 3.9 * 1vw);
+  }
+
+  .menu {
+    width: 100vw;
+    height: calc(774 / 3.9 * 1vw);
+    bottom: calc(-774 / 3.9 * 1vw);
+    padding-top: calc(150 / 3.9 * 1vw);
+    padding-bottom: calc(30 / 3.9 * 1vw);
+    gap: calc(290 / 3.9 * 1vw);
+    background-color: green;
+  }
+
+  .menuNav {
+    gap: calc(40 / 3.9 * 1vw);
+  }
+
+  .menuNav > a {
+    font-size: calc(28 / 3.9 * 1vw);
+    line-height: calc(28 / 3.9 * 1vw);
+  }
+
+  .menu > div:last-child {
+    gap: calc(16 / 3.9 * 1vw);
+  }
+
+  .menu > div:last-child > p {
+    font-size: calc(28 / 3.9 * 1vw);
+    line-height: calc(28 / 3.9 * 1vw);
+  }
+}

@@ -1,0 +1,196 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(40 / 16 * 1vw);
+}
+
+.home > p:first-child {
+  font-family: var(--font-oswald);
+  font-weight: 600;
+  font-size: calc(32 / 16 * 1vw);
+  line-height: calc(32 / 16 * 1vw);
+  letter-spacing: -2%;
+  padding: calc(10 / 16 * 1vw);
+  background-color: var(--font-color);
+  color: white;
+  text-transform: uppercase;
+}
+
+.home > h1 {
+  font-family: var(--font-oswald);
+  font-weight: 700;
+  font-size: calc(118 / 16 * 1vw);
+  line-height: calc(118 / 16 * 1vw);
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.home > p:nth-child(3) {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--font-color);
+  margin-top: calc(20 / 16 * 1vw);
+}
+
+.callNow {
+  width: calc(250 / 16 * 1vw);
+  height: calc(55 / 16 * 1vw);
+  background-color: var(--brand-color);
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(16 / 16 * 1vw);
+  letter-spacing: 0%;
+  border: none;
+  margin-top: calc(20 / 16 * 1vw);
+  cursor: pointer;
+}
+
+.callNow:hover {
+  background-color: var(--button-hover);
+}
+
+.home > img {
+  width: calc(930 / 16 * 1vw);
+  height: calc(465 / 16 * 1vw);
+  margin-top: calc(58 / 16 * 1vw);
+}
+
+.callShow {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.callShowWrapper {
+  width: calc(600 / 16 * 1vw);
+  display: flex;
+  flex-direction: column;
+  padding: calc(40 / 16 * 1vw);
+  background-color: #f2f2f2;
+  position: relative;
+  align-items: center;
+}
+
+.callShowWrapper > button:first-child {
+  width: calc(30 / 16 * 1vw);
+  height: calc(30 / 16 * 1vw);
+  background-color: var(--brand-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  top: calc(10 / 16 * 1vw);
+  cursor: pointer;
+  right: calc(10 / 16 * 1vw);
+}
+
+.callShowWrapper > button:first-child > img {
+  width: calc(18 / 16 * 1vw);
+  height: calc(15 / 16 * 1vw);
+}
+
+.callShowWrapper > h1 {
+  width: calc(470 / 16 * 1vw);
+  font-family: var(--font-oswald);
+  font-weight: 600;
+  font-size: calc(32 / 16 * 1vw);
+  line-height: calc(32 / 16 * 1vw);
+  letter-spacing: -2%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
+
+.callShowWrapper > h1 > span {
+  color: var(--brand-color);
+}
+
+.callShowWrapper > p:nth-child(3) {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--font-color);
+  width: calc(470 / 16 * 1vw);
+  margin-top: calc(16 / 16 * 1vw);
+}
+
+.detailForm {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8 / 16 * 1vw);
+  width: 100%;
+  margin-top: calc(32 / 16 * 1vw);
+}
+
+.detailForm > input {
+  width: 100%;
+  height: calc(53 / 16 * 1vw);
+  border: none;
+  padding: 0 calc(16 / 16 * 1vw);
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+  color: var(--color-gray);
+}
+
+.detailForm > div > p {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+}
+
+.detailForm > div > p > span {
+  text-decoration: underline;
+}
+
+.detailForm > input::placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+  color: var(--color-gray);
+}
+
+.leaveComment {
+  width: 100%;
+  height: calc(55 / 16 * 1vw);
+  background-color: var(--brand-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(16 / 16 * 1vw);
+  letter-spacing: 0%;
+  border: none;
+  margin-top: calc(16 / 16 * 1vw);
+}
