@@ -31,7 +31,7 @@
 .home > p:nth-child(3) {
   font-family: Inter, sans-serif;
   font-weight: 500;
-  font-size: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
   text-align: center;
@@ -46,8 +46,8 @@
   color: white;
   font-family: Inter, sans-serif;
   font-weight: 600;
-  font-size: calc(16 / 16 * 1vw);
-  line-height: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
+  line-height: calc(16 / 16 * 1vw); /*16*/
   letter-spacing: 0%;
   border: none;
   margin-top: calc(20 / 16 * 1vw);
@@ -127,13 +127,13 @@
 .callShowWrapper > p:nth-child(3) {
   font-family: Inter, sans-serif;
   font-weight: 500;
-  font-size: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
   text-align: center;
   color: var(--font-color);
   width: calc(470 / 16 * 1vw);
-  margin-top: calc(16 / 16 * 1vw);
+  margin-top: calc(16 / 16 * 1vw); /*16*/
 }
 
 .detailForm {
@@ -148,10 +148,10 @@
   width: 100%;
   height: calc(53 / 16 * 1vw);
   border: none;
-  padding: 0 calc(16 / 16 * 1vw);
+  padding: 0 calc(16 / 16 * 1vw); /*16*/
   font-family: Inter, sans-serif;
   font-weight: 500;
-  font-size: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
   color: var(--color-gray);
@@ -172,7 +172,7 @@
 .detailForm > div > p {
   font-family: Inter, sans-serif;
   font-weight: 500;
-  font-size: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
 }
@@ -184,7 +184,7 @@
 .detailForm > input::placeholder {
   font-family: Inter, sans-serif;
   font-weight: 500;
-  font-size: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
   color: var(--color-gray);
@@ -200,9 +200,250 @@
   color: white;
   font-family: Inter, sans-serif;
   font-weight: 600;
-  font-size: calc(16 / 16 * 1vw);
-  line-height: calc(16 / 16 * 1vw);
+  font-size: calc(16 / 16 * 1vw); /*16*/
+  line-height: calc(16 / 16 * 1vw); /*16*/
   letter-spacing: 0%;
   border: none;
-  margin-top: calc(16 / 16 * 1vw);
+  margin-top: calc(16 / 16 * 1vw); /*16*/
+}
+
+.leaveComment:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: calc(20 / 7.68 * 1vw);
+    padding-top: calc(60 / 7.68 * 1vw);
+  }
+
+  .home > p:first-child {
+    font-size: calc(32 / 7.68 * 1vw);
+    line-height: calc(32 / 7.68 * 1vw);
+    padding: calc(10 / 7.68 * 1vw);
+  }
+
+  .home > h1 {
+    font-size: calc(72 / 7.68 * 1vw);
+    line-height: calc(72 / 7.68 * 1vw);
+  }
+
+  .home > p:nth-child(3) {
+    font-size: calc(16 / 7.68 * 1vw); /*7.68*/
+    line-height: calc(21 / 7.68 * 1vw);
+    margin-top: calc(20 / 7.68 * 1vw);
+  }
+
+  .callNow {
+    width: calc(250 / 7.68 * 1vw);
+    height: calc(55 / 7.68 * 1vw);
+    font-size: calc(16 / 7.68 * 1vw); /*16*/
+    line-height: calc(16 / 7.68 * 1vw); /*16*/
+    margin-top: calc(20 / 7.68 * 1vw);
+  }
+
+  .home > img {
+    width: 100%;
+    height: calc(364 / 7.68 * 1vw);
+    margin-top: calc(40 / 7.68 * 1vw);
+  }
+
+  .callShow {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .callShowWrapper {
+    width: calc(600 / 7.68 * 1vw);
+    padding: calc(40 / 7.68 * 1vw);
+  }
+
+  .callShowWrapper > button:first-child {
+    width: calc(30 / 7.68 * 1vw);
+    height: calc(30 / 7.68 * 1vw);
+    top: calc(10 / 7.68 * 1vw);
+    right: calc(10 / 7.68 * 1vw);
+  }
+
+  .callShowWrapper > button:first-child > img {
+    width: calc(15 / 7.68 * 1vw);
+    height: calc(15 / 7.68 * 1vw);
+  }
+
+  .callShowWrapper > h1 {
+    width: calc(470 / 7.68 * 1vw);
+    font-size: calc(32 / 7.68 * 1vw);
+    line-height: calc(32 / 7.68 * 1vw);
+  }
+
+  .callShowWrapper > p:nth-child(3) {
+    font-size: calc(16 / 7.68 * 1vw); /*7.68*/
+    line-height: calc(21 / 7.68 * 1vw);
+    width: calc(470 / 7.68 * 1vw);
+    margin-top: calc(16 / 7.68 * 1vw); /*16*/
+  }
+
+  .detailForm {
+    gap: calc(8 / 7.68 * 1vw);
+    margin-top: calc(32 / 7.68 * 1vw);
+  }
+
+  .detailForm > input {
+    height: calc(53 / 7.68 * 1vw);
+    padding: 0 calc(16 / 7.68 * 1vw); /*16*/
+    font-size: calc(16 / 7.68 * 1vw); /*7.68*/
+    line-height: calc(21 / 7.68 * 1vw);
+  }
+
+  .detailForm > div {
+    gap: calc(8 / 7.68 * 1vw);
+  }
+
+  .detailForm > div > img {
+    width: calc(15 / 7.68 * 1vw);
+    height: calc(15 / 7.68 * 1vw);
+    cursor: pointer;
+  }
+
+  .detailForm > div > p {
+    font-size: calc(16 / 7.68 * 1vw); /*7.68*/
+    line-height: calc(21 / 7.68 * 1vw);
+  }
+
+  .detailForm > input::placeholder {
+    font-size: calc(16 / 7.68 * 1vw); /*7.68*/
+    line-height: calc(21 / 7.68 * 1vw);
+  }
+
+  .leaveComment {
+    height: calc(55 / 7.68 * 1vw);
+    font-size: calc(16 / 7.68 * 1vw); /*16*/
+    line-height: calc(16 / 7.68 * 1vw); /*16*/
+    margin-top: calc(16 / 7.68 * 1vw); /*16*/
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: calc(10 / 3.9 * 1vw);
+    padding-top: calc(40 / 3.9 * 1vw);
+  }
+
+  .home > p:first-child {
+    font-size: calc(18 / 3.9 * 1vw);
+    line-height: calc(18 / 3.9 * 1vw);
+    padding: calc(10 / 3.9 * 1vw);
+  }
+
+  .home > h1 {
+    font-size: calc(34 / 3.9 * 1vw);
+    line-height: calc(34 / 3.9 * 1vw);
+  }
+
+  .home > p:nth-child(3) {
+    font-size: calc(16 / 3.9 * 1vw); /*3.9*/
+    line-height: calc(21 / 3.9 * 1vw);
+    margin-top: calc(20 / 3.9 * 1vw);
+  }
+
+  .callNow {
+    width: calc(250 / 3.9 * 1vw);
+    height: calc(55 / 3.9 * 1vw);
+    font-size: calc(16 / 3.9 * 1vw); /*16*/
+    line-height: calc(16 / 3.9 * 1vw); /*16*/
+    margin-top: calc(20 / 3.9 * 1vw);
+  }
+
+  .home > img {
+    width: 100%;
+    height: calc(185 / 3.9 * 1vw);
+    margin-top: calc(40 / 3.9 * 1vw);
+  }
+
+  .callShow {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 calc(10 / 3.9 * 1vw);
+  }
+
+  .callShowWrapper {
+    width: 100%;
+    padding: calc(60 / 3.9 * 1vw) calc(16 / 3.9 * 1vw);
+  }
+
+  .callShowWrapper > button:first-child {
+    width: calc(30 / 3.9 * 1vw);
+    height: calc(30 / 3.9 * 1vw);
+    top: calc(10 / 3.9 * 1vw);
+    right: calc(10 / 3.9 * 1vw);
+  }
+
+  .callShowWrapper > button:first-child > img {
+    width: calc(15 / 3.9 * 1vw);
+    height: calc(15 / 3.9 * 1vw);
+  }
+
+  .callShowWrapper > h1 {
+    width: 100%;
+    font-size: calc(24 / 3.9 * 1vw);
+    line-height: calc(24 / 3.9 * 1vw);
+  }
+
+  .callShowWrapper > p:nth-child(3) {
+    font-size: calc(16 / 3.9 * 1vw); /*3.9*/
+    line-height: calc(21 / 3.9 * 1vw);
+    width: 100%;
+    margin-top: calc(16 / 3.9 * 1vw); /*16*/
+  }
+
+  .detailForm {
+    gap: calc(8 / 3.9 * 1vw);
+    margin-top: calc(32 / 3.9 * 1vw);
+  }
+
+  .detailForm > input {
+    height: calc(53 / 3.9 * 1vw);
+    padding: 0 calc(16 / 3.9 * 1vw); /*16*/
+    font-size: calc(16 / 3.9 * 1vw); /*3.9*/
+    line-height: calc(21 / 3.9 * 1vw);
+  }
+
+  .detailForm > div {
+    gap: calc(8 / 3.9 * 1vw);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .detailForm > div > img {
+    width: calc(15 / 3.9 * 1vw);
+    height: calc(15 / 3.9 * 1vw);
+  }
+
+  .detailForm > div > p {
+    font-size: calc(14 / 3.9 * 1vw); /*3.9*/
+    line-height: calc(18 / 3.9 * 1vw);
+    flex-direction: column;
+    width: calc(203 / 3.9 * 1vw);
+  }
+
+  .detailForm > input::placeholder {
+    font-size: calc(16 / 3.9 * 1vw); /*3.9*/
+    line-height: calc(21 / 3.9 * 1vw);
+  }
+
+  .leaveComment {
+    height: calc(55 / 3.9 * 1vw);
+    font-size: calc(16 / 3.9 * 1vw); /*16*/
+    line-height: calc(16 / 3.9 * 1vw); /*16*/
+    margin-top: calc(16 / 3.9 * 1vw); /*16*/
+  }
 }

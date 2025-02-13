@@ -171,7 +171,6 @@ nav > a:hover {
     padding-top: calc(150 / 3.9 * 1vw);
     padding-bottom: calc(30 / 3.9 * 1vw);
     gap: calc(290 / 3.9 * 1vw);
-    background-color: green;
   }
 
   .menuNav {

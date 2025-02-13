@@ -41,9 +41,14 @@ function Home() {
 
 function CallShow({ close, isAgree, checkAgree }) {
   return (
-    <div className="callShow">
+    <div className="callShow" onClick={close}>
       <div className="callShowWrapper">
-        <button onClick={close}>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            close();
+          }}
+        >
           <img src={close1} alt="closeIcon" />
         </button>
         <h1>
@@ -61,7 +66,10 @@ function CallShow({ close, isAgree, checkAgree }) {
             <img
               src={isAgree ? checkbox : checkboxEmpty}
               alt="checkbox"
-              onClick={checkAgree}
+              onClick={(e) => {
+                e.stopPropagation();
+                checkAgree();
+              }}
             />
             <p>
               Я согласен на обработку <span>Персональных данных</span>
