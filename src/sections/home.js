@@ -2,12 +2,19 @@ import lockImg from "../images/Lock-image.svg";
 import "../style/home.css";
 import close1 from "../images/close.svg";
 import { useState } from "react";
+import checkbox from "../images/Checkbox.svg";
+import checkboxEmpty from "../images/checkEmpty.svg";
 
 function Home() {
   const [isOpenCall, setCall] = useState(false);
+  const [isAgree, setAgree] = useState(false);
 
   function close() {
     setCall((c) => !c);
+  }
+
+  function checkAgree() {
+    setAgree((c) => !c);
   }
 
   return (
@@ -25,12 +32,14 @@ function Home() {
         <img src={lockImg} alt="lockImg" />
       </div>
 
-      {isOpenCall && <CallShow close={close} />}
+      {isOpenCall && (
+        <CallShow close={close} isAgree={isAgree} checkAgree={checkAgree} />
+      )}
     </>
   );
 }
 
-function CallShow({ close }) {
+function CallShow({ close, isAgree, checkAgree }) {
   return (
     <div className="callShow">
       <div className="callShowWrapper">
@@ -49,6 +58,11 @@ function CallShow({ close }) {
           <input type="text" placeholder="Номер телефона" />
           <input type="email" placeholder="Email" />
           <div>
+            <img
+              src={isAgree ? checkbox : checkboxEmpty}
+              alt="checkbox"
+              onClick={checkAgree}
+            />
             <p>
               Я согласен на обработку <span>Персональных данных</span>
             </p>

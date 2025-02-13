@@ -157,6 +157,18 @@
   color: var(--color-gray);
 }
 
+.detailForm > div {
+  display: flex;
+  align-items: center;
+  gap: calc(8 / 16 * 1vw);
+}
+
+.detailForm > div > img {
+  width: calc(15 / 16 * 1vw);
+  height: calc(15 / 16 * 1vw);
+  cursor: pointer;
+}
+
 .detailForm > div > p {
   font-family: Inter, sans-serif;
   font-weight: 500;
