@@ -59,9 +59,27 @@ function CallShow({ close, isAgree, checkAgree }) {
           время.
         </p>
         <div className="detailForm">
-          <input type="text" placeholder="Имя" />
-          <input type="text" placeholder="Номер телефона" />
-          <input type="email" placeholder="Email" />
+          <input
+            type="text"
+            placeholder="Имя"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Номер телефона"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          />
           <div>
             <img
               src={isAgree ? checkbox : checkboxEmpty}
