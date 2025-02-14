@@ -26,3 +26,39 @@
 .titleMain > h1 > span {
   color: var(--brand-color);
 }
+
+@media only screen and (max-width: 768px) {
+  .titleMain {
+    margin-top: calc(140 / 7.68 * 1vw);
+    flex-direction: column;
+  }
+
+  .titleMain > p {
+    width: 100%;
+    font-size: calc(16 / 7.68 * 1vw);
+    line-height: calc(21 / 7.68 * 1vw);
+  }
+
+  .titleMain > h1 {
+    font-size: calc(52 / 7.68 * 1vw);
+    line-height: calc(52 / 7.68 * 1vw);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .titleMain {
+    margin-top: calc(70 / 3.9 * 1vw);
+    flex-direction: column;
+  }
+
+  .titleMain > p {
+    width: 100%;
+    font-size: calc(16 / 3.9 * 1vw);
+    line-height: calc(21 / 3.9 * 1vw);
+  }
+
+  .titleMain > h1 {
+    font-size: calc(32 / 3.9 * 1vw);
+    line-height: calc(32 / 3.9 * 1vw);
+  }
+}
