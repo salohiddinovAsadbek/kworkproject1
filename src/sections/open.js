@@ -2,7 +2,6 @@ import Title from "../components/title";
 import "../style/open.css";
 import open1 from "../images/open1.svg";
 import open2 from "../images/open2.svg";
-import { useEffect, useState } from "react";
 
 function Open() {
   const [isOpen, setOpen] = useState(-1);
