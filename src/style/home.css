@@ -154,7 +154,7 @@
   font-size: calc(16 / 16 * 1vw); /*16*/
   line-height: calc(21 / 16 * 1vw);
   letter-spacing: 0%;
-  color: var(--color-gray);
+  color: var(--font-color);
 }
 
 .detailForm > div {

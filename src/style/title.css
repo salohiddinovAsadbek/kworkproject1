@@ -1,0 +1,28 @@
+.titleMain {
+  display: flex;
+  margin-top: calc(140 / 16 * 1vw);
+}
+
+.titleMain > p {
+  width: calc(385 / 16 * 1vw);
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: calc(16 / 16 * 1vw);
+  line-height: calc(21 / 16 * 1vw);
+  letter-spacing: 0%;
+  color: var(--font-color);
+}
+
+.titleMain > h1 {
+  font-family: var(--font-oswald);
+  font-weight: 700;
+  font-size: calc(86 / 16 * 1vw);
+  line-height: calc(86 / 16 * 1vw);
+  letter-spacing: -2%;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.titleMain > h1 > span {
+  color: var(--brand-color);
+}
